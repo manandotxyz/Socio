@@ -1,0 +1,430 @@
+/**
+Theme Name: Astra
+Theme URI: https://wpastra.com/
+Author: Brainstorm Force
+Author URI: https://wpastra.com/about/?utm_source=theme_preview&utm_medium=author_link&utm_campaign=astra_theme
+Description: Astra is fast, fully customizable & beautiful WordPress theme suitable for blog, personal portfolio, business website and WooCommerce storefront. It is very lightweight (less than 50KB on frontend) and offers unparalleled speed. Built with SEO in mind, Astra comes with Schema.org code integrated and is Native AMP ready so search engines will love your site. It offers special features and templates so it works perfectly with all page builders like Elementor, Beaver Builder, Visual Composer, SiteOrigin, Divi, etc. Some of the other features: # WooCommerce Ready # Responsive # RTL & Translation Ready # Extendible with premium addons # Regularly updated # Designed, Developed, Maintained & Supported by Brainstorm Force. Looking for a perfect base theme? Look no further. Astra is fast, fully customizable and WooCommerce ready theme that you can use for building any kind of website!
+Version: 3.7.9
+Requires at least: 5.3
+Tested up to: 5.9.1
+Requires PHP: 5.3
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: astra
+Domain Path: /languages
+Tags: custom-menu, custom-logo, entertainment, one-column, two-columns, left-sidebar, e-commerce, right-sidebar, custom-colors, editor-style, featured-images, full-width-template, microformats, post-formats, rtl-language-support, theme-options, threaded-comments, translation-ready, blog
+AMP: true
+
+Astra WordPress Theme, Copyright 2020 WPAstra.
+Astra is distributed under the terms of the GNU GPL.
+
+Astra is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of.
+Nicolas Gallagher and Jonathan Neal https://necolas.github.com/normalize.css/
+
+Astra icon font is based on IcoMoon-Free vector icon by Keyamoon.
+IcoMoon-Free vector icon distributed under terms of CC BY 4.0 or GPL. (https://creativecommons.org/licenses/by/4.0/ or https://www.gnu.org/licenses/gpl.html)
+Source: http://keyamoon.com/
+
+Flexibility is a JavaScript polyfill for Flexbox By Jonathan Neal, 10up. (https://github.com/jonathantneal/flexibility)
+Licensed under MIT ( https://github.com/jonathantneal/flexibility/blob/master/LICENSE.md )
+
+Screenshot image is a collage of actual sites created using the Astra WordPress Theme.
+
+Icons used in the Screenshot image are all licensed under Creative Commons ( CC BY 4.0 ) License ( https://fontawesome.com/license/free )
+https://fontawesome.com/v5.15/icons/store?style=solid
+https://fontawesome.com/v5.15/icons/shopping-cart?style=solid
+https://fontawesome.com/v5.15/icons/pen-square?style=solid
+https://fontawesome.com/v5.15/icons/user-tie?style=solid
+https://fontawesome.com/v5.15/icons/user-tie?style=solid
+
+Illustrations used in the Screenshot images are all licensed under Creative Commons ( CC0 ) License ( https://gumroad.com/l/humaaans )
+https://websitedemos.net/web-design-agency-08/wp-content/uploads/sites/796/2021/05/standing-24.png
+https://websitedemos.net/web-design-agency-08/wp-content/uploads/sites/796/2021/05/sitting-2.png
+
+Hand-drawn illustrations used are created by Brainstorm Force and released under Creative Commons ( CC0 ) License.
+https://websitedemos.net/web-design-agency-08/wp-content/uploads/sites/796/2021/05/girl-with-image-container.png
+https://websitedemos.net/web-design-agency-08/wp-content/uploads/sites/796/2021/05/boy-with-code-container.png
+https://websitedemos.net/web-design-agency-08/wp-content/uploads/sites/796/2021/05/web-browser.png
+
+The same site as screenshot can be imported from here https://websitedemos.net/web-design-agency-08/.
+
+For more information, refer to this document on how to create a page like in the screenshot - https://wpastra.com/docs/replicating-the-screenshot/.
+
+Astra default breadcrumb is based on Breadcrumb Trail by Justin Tadlock. (https://github.com/justintadlock/breadcrumb-trail)
+Breadcrumb Trail is distributed under the terms of the GNU GPL v2 or later.
+
+Astra local fonts feature is based on Webfonts Loader by WordPress Themes Team (WPTT). (https://github.com/WPTT/webfont-loader)
+Licensed under MIT ( https://github.com/WPTT/webfont-loader/blob/master/LICENSE )
+
+/* Note: The CSS files are loaded from assets/css/ folder. */
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('../../../welcome/v2/Urbanist-Italic.woff') format('woff2'),
+        url('../../../welcome/v2/Urbanist-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('../../../welcome/v2/Urbanist-Regular.woff') format('woff2'),
+        url('../../../welcome/v2/Urbanist-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+	font-family: Urbanist;
+	color:#000;
+	font-size: 1.2rem;
+	letter-spacing: 1px;
+	background:#fff;
+}
+body a:focus{
+	
+}
+h1.entry-title{ display:none;}
+.home .site-content>.ast-container{ width:100%; max-width:100% !important;padding: 0; margin: 0;display: block;}
+.bg-slider{
+	background-image:url('images/banner.jpg');
+	background-repeat:no-repeat;
+    background-size: cover;
+	color:#fff;	
+	padding: 70px;
+}
+.bg-slider .content h2{ 
+	color: #fff;
+    font-size: 55px;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+.bg-slider .apps a {
+    margin: 5px 15px;
+    display: inline-block;
+}
+.bg-slider  .content{
+	max-width: 50%;
+}
+
+.bg-slider  .content span{
+	font-size: 32px;
+    padding-left: 50px;
+    padding-bottom: 20px !important;
+    display: block;
+    padding-top: 30px;
+}
+.bg-slider{
+	background-image:url('images/banner.jpg');
+	background-repeat:no-repeat;
+	position:relative;
+	
+}
+.process-slide{
+	background:#fac812;
+	margin:0 auto;
+	padding:50px;
+}
+.process-slide h2{
+	text-align: center;
+    margin-bottom: 50px;
+}
+
+.site-footer{
+	background-image:url('images/footer-bg.png');
+	background-repeat:no-repeat;
+    background-size: cover;
+	color:#fff;	
+}
+
+.site-above-footer-wrap,.site-below-footer-wrap{background:none !important;}
+.site-below-footer-wrap{ padding:0;}
+.site-above-footer-wrap{padding: 50px 0;}
+ul#astra-footer-menu { display:block;}
+ul#astra-footer-menu li {
+    float: left;
+    width: 50%;
+}
+ ul#astra-footer-menu li a{ color:#fff;}
+ .ast-footer-copyright p{ text-align:left; color:#fff;}
+.site-content{
+    padding: 20px 0px 50px;
+}
+.home .site-content{ padding:0;margin-top: -26px;}
+
+.bg-slider .content .qr {
+    float: left;
+}
+.bg-slider .image img{
+	animation: MoveUpDown 1s linear;
+	    position: absolute;
+    right: 50px;
+    bottom: -70px;
+	transition: all .3s ease-out;
+	max-width:50%;
+}
+.content-box {
+	padding: 50px;
+    background: #fff;
+	background-image: url(images/chat-shape.png);
+    background-repeat: no-repeat; 
+    background-position: top right;
+}
+.content-box .ast-container{ display:block;}
+.boxes  .item .content {
+    background: #fff;
+    margin: 0 10px;
+    padding: 20px;
+    border-radius: 20px;
+    padding-top: 62px;
+    font-size: 18px;
+}
+.boxes  .item{
+	position:relative;
+	min-width: 300px;
+}
+.boxes .item > img {
+    position: absolute;
+    left: -20px;
+    top: -40px;
+    max-width: 230px;
+}
+.site-content .boxes.ast-container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.entry-content .boxes .item p {
+    margin-bottom: 0;
+}
+.site-content .boxes.ast-container.second{
+	margin-top: 100px !important;
+    max-width: 800px;
+}
+.ast-desktop .ast-primary-header-bar .main-header-menu > .menu-item {
+    line-height: 30px !important;
+	padding: 0 10px;
+}
+.main-header-menu  li.current-menu-item a {
+    border-bottom: 2px solid #fac812; 
+}
+.main-header-menu  li a {
+	padding: 0 3px  !important;
+}
+.tmm .tmm_member .tmm_photo{ margin:0 auto !important;box-shadow:none; border:none;width: 140px;height: 140px;padding: 0;} 
+.tmm .tmm_member {border:none !important; border-radius:20px;max-width: 300px; padding: 30px 0;  margin-top: 0 !important;}
+.tmm .tmm_theme_f .tmm_job{color:#000!important;}
+.tmm_names span {
+    font-weight: bold !important;
+}
+.site-footer-below-section-1{
+	border-top: 2px solid #333;
+    padding: 20px 0;
+}
+.ast-builder-footer-grid-columns h4{
+	color: #fac812;
+    font-weight: bold;	
+	padding-bottom: 15px;
+}
+.footer-nav-wrap h4{ padding-left: 10px;}
+.ast-site-title-wrap{ display:none;}
+.mobile-menu-toggle-icon svg{ fill:#fac812 !important;}
+.faq-section {
+    background: #F4F0E8;
+    padding: 50px;
+}
+.site-content h2 {
+    text-align: center;
+    font-weight: bold;
+}
+.faq-box.ast-container {
+    max-width: 800px;
+	width:95%;
+}
+#accordions-94{ background:none !important;}
+.home .accordions-head { margin: 20px 0 !important; border-radius: 15px; padding: 20px;}
+.home .accordions-head.ui-state-active { margin-bottom: 0 !important; border-bottom-left-radius: 0; border-bottom-right-radius: 0;}
+.home .ui-accordion-content-active {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.page-id-13 .wpcf7{max-width:500px; margin:0 auto; width:90%}
+.contact-form h4{
+	text-align: center;
+    font-weight: bold;
+}
+.contact-form .wpcf7-submit{
+	width: 100%;
+    background: #FAC812;
+    box-shadow: none;
+    border: oldlace;
+    color: #000;
+    font-size: 1.2rem;
+}
+.contact-form textarea{
+	height: 150px;
+}
+.contact-form input, .contact-form textarea{
+    background: #fff;
+    margin: 10px 0;
+    border-radius: 15px;
+    padding: 15px !important;
+    border: 2px solid #ccc;
+}
+.footer-nav-wrap .astra-footer-horizontal-menu li:first-child a {
+    padding-left: 0.5em !important;
+}
+.page-id-11 .site-content	{background: #f4f0e8;}
+.page-id-11  .site-content a{ color: #000; font-weight: bold;}
+.process-slide .top-sec {
+    position: absolute;
+    left: -20px;
+    top: -38px;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 10px;
+    font-size: 11px;
+    border-radius: 20px;
+    box-shadow: 0px 6px 20px rgb(16 30 54 / 15%);
+    padding-bottom: 5px;
+    padding-top: 17px;
+	min-width: 220px;
+}
+.process-slide .image-box img {
+    padding-right: 5px;
+}
+
+.process-slide .image-box img {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+	max-width: 60px;
+}
+.process-slide .image-box {
+    padding: 0 10px;
+    text-align: center;
+}
+.process-slide .top-sec.step1 {
+    padding: 23px 10px;
+}
+.process-slide .top-sec.step1 img{
+	padding:0;
+	padding-right: 5px;
+
+}
+.process-slide .step1 .image-box {
+    padding: 0;
+}
+
+.home .apps img { max-width: 204px;}
+.home .qr img { max-width: 164px;}
+@media(max-width: 1367px) and (min-width: 1200px){
+	.bg-slider .content h2{ font-size: 60px;}	
+	.bg-slider{padding: 50px;}
+	.bg-slider .image img { max-width: 48%;}
+}
+@media(max-width: 1199px) and (min-width: 1024px){
+	.bg-slider .image img{ max-width:55%; right:20px; bottom: -90px;}
+	.bg-slider .content h2{ font-size: 40px;}	
+	.bg-slider{padding: 20px;}
+	.boxes .item .content{ font-size:15px;}
+	.boxes .item {min-width: 250px;}
+	.site-footer{ padding:0 20px;}
+	.site-logo-img img { max-height: 50px; width: auto;}
+}
+@media(max-width: 1023px){
+	.site-content .boxes.ast-container.second{ margin-top:0 !important;}
+	.site-logo-img img { max-height: 50px; width: auto;}
+	.bg-slider .content { max-width: 60%; text-align: center; margin: 0 auto;}
+	.bg-slider .image { display:none;}
+	.bg-slider .content h2{ font-size: 40px;}
+	.boxes .item { min-width: 200px; width: auto !important; margin: 50px;}
+	.site-footer{ padding:0 20px;}
+	.bg-slider{padding: 20px;}
+	.bg-slider .content .btns{ max-width: 400px; margin: 0 auto;}
+	.bg-slider .content span{ padding-left:0;}
+	.ast-builder-footer-grid-columns h4{ text-align:center; margin:0 auto;}
+	.ast-footer-copyright p { text-align: center;}	
+	ul.main-header-menu.stack-on-mobile { background: #fff;}
+	ul.main-header-menu.stack-on-mobile li a { color: #000; font-weight: bold;}
+	.site-footer .ast-builder-grid-row-container.ast-builder-grid-row-mobile-full .ast-builder-grid-row { grid-template-columns: 1fr;}
+}
+@media(max-width: 925px){
+.main-header-menu li a {
+    padding: 0 15px !important;
+}
+}
+
+@media(max-width: 767px){ 
+	.bg-slider .content { max-width: 70%; text-align: center; margin: 0 auto;} 
+}
+
+@media(max-width: 650px){ 
+	.bg-slider .content { max-width: 90%; text-align: center; margin: 0 auto;} 
+}
+@media(max-width: 520px){ 
+	.bg-slider .content { max-width: 100%; text-align: center; margin: 0 auto;} 
+	.bg-slider .content span { padding-top: 0; font-size: 24px;}
+	.bg-slider .content h2{ font-size: 35px;}    
+	.bg-slider .apps a { margin: 5px 0;}
+	.bg-slider .content img { max-width: 60%;}
+	.bg-slider .content .qr img { max-width: 105px;}
+	.faq-section {  padding: 50px 0;}
+	.content-box {  padding: 50px 0;}
+	.process-slide {  padding: 50px 0;}
+}
+
+@media(max-width: 400px){ 
+	.bg-slider .content span { padding-top: 0; font-size: 16px;}
+	.bg-slider .content h2{ font-size: 22px;}   
+	.bg-slider .content .qr { float:none;}
+	.contact-form h4{font-size: 14px;}
+	ul#astra-footer-menu li {  width: 100%;}
+}
+
+.ea-card .ea-header a {
+    background: transparent !important;
+	font-size: 16px !important;
+}
+.ea-card{
+	background:#fff;
+	border-radius:20px;
+}
+.ea-body{
+	font-size: 16px;	
+    color: #000;
+}
+#sp-ea-103.sp-easy-accordion>.sp-ea-single> .ea-header a .ea-expand-icon.fa {
+    float: right !important; 
+}
+#sp-ea-103.sp-easy-accordion>.sp-ea-single>.sp-collapse>.ea-body{ background:none !important}
+#sp-ea-103.sp-easy-accordion>.sp-ea-single{ background :#fff !important; border-radius:15px;}
+.sp-easy-accordion{ width:100% !important;}
+#sp-ea-103.sp-easy-accordion>.sp-ea-single>.ea-header a {
+    color: #000;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    line-height: 20px !important;
+	padding:20px  !important;
+}
+#sp-ea-103.sp-easy-accordion>.sp-ea-single>.ea-header a .ea-expand-icon.fa { 
+    font-size: 22px;
+}
+.tmm .tmm_member .tmm_textblock .tmm_sociallink img { 
+    width: 32px;
+    height: 32px; 
+}
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: -70px;
+  }
+  50% {
+    bottom: -270px;
+  }
+}
